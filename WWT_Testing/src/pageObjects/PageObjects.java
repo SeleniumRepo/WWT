@@ -508,10 +508,10 @@ public class PageObjects extends SeleneseTestCase {
 		    element = driver.findElement(By.name(locator));
 		} else if(plocator.startsWith("css=")){
 			
-			//locator = plocator.split("css=")[1];
-			locator = plocator;
+			locator = plocator.split("css=")[1];
+			//locator = plocator;
 			System.out.println("Element Locator is css "+locator);
-			element = driver.findElement(By.cssSelector(plocator));
+			element = driver.findElement(By.cssSelector(locator));
 		} else if(plocator.startsWith("class=")){
 			
 			locator = plocator.split("class=")[1];

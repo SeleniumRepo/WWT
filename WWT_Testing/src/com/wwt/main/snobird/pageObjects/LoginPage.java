@@ -55,8 +55,8 @@ public class LoginPage extends PageObjects {
 	
 	public void login(){
 		
-		userName.inputText("maheshwg"); // @Todo: need to change to take it from excel file
-		password.inputText("n8cRebRa");//@Todo: need to change to take it from excel file
+		userName.inputText("kakanis"); // @Todo: need to change to take it from excel file
+		password.inputText("pass123");//@Todo: need to change to take it from excel file
 		//loginButton.clickAndWait(locator, timeout);
 		loginButton.click();
 		

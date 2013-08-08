@@ -38,7 +38,8 @@ public class ExcelFile {
 			 XDCols=sheet.getRow(0).getLastCellNum();
 			 System.out.println(" Excel files Rows :"+XDRows+"  Columns :"+XDCols);
 			 XData=new String [XDRows][XDCols];
-			for(int i=0; i<XDRows; i++){
+			for(int i=1; i<XDRows; i++){
+				//starting with i=1 to skip heading.
 				HSSFRow row=sheet.getRow(i);
 				for(int j=0; j<XDCols; j++){
 					HSSFCell cell=row.getCell(j);
